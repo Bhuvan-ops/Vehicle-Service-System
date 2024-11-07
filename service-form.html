@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Vehicle Service Form</h1>
+        </header>
+
+        <div class="form-container">
+            <button class="back-button" id="back-button" onclick="window.location.href='index.html'">Back</button>
+
+            <form id="vsform" class="service-form">
+                <fieldset class="form-fieldset">
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="input-field"><br>
+
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="text" id="phone_number" class="input-field" maxlength="10"><br>
+
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" class="input-field"><br>
+                </fieldset>
+
+                <fieldset class="form-fieldset">
+                    <legend>Vehicle Details</legend>
+                    <label for="brand_name">Vehicle Brand:</label>
+                    <input type="text" id="brand_name" class="input-field"><br>
+
+                    <label for="manufacture_year">Manufacture Year:</label>
+                    <input type="text" id="manufacture_year" class="input-field" maxlength="4"><br>
+
+                    <label for="vehicle_number">Vehicle Number:</label>
+                    <input type="text" id="vehicle_number" class="input-field"
+                        pattern="[A-Za-z]{2}[0-9]{2}[A-Za-z]{2}[0-9]{4}"><br>
+
+                    <label for="kms_driven">Total Kms. Driven:</label>
+                    <input type="number" id="kms_driven" class="input-field" maxlength="5"><br>
+                </fieldset>
+
+                <fieldset class="form-fieldset">
+                    <legend>Service Details</legend>
+                    <label for="service_type">Service Type:</label>
+                    <select id="service_type" class="input-field">
+                        <option value="blank" name="blank"></option>
+                        <option value="full_service" name="Full Service">Full Service</option>
+                        <option value="oil_change" name="Oil Change">Oil Change</option>
+                        <option value="brake_inspection" name="Brake Inspection">Brake Inspection</option>
+                        <option value="wash" name="Wash">Wash</option>
+                    </select><br>
+
+                    <label for="service_date">Date:</label>
+                    <input type="date" id="service_date" class="input-field"><br>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Submit" class="submit-button">
+                    <input type="reset" value="Reset" class="reset-button">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #a1a8a1;
+    color: white;
+    margin-left: 42%;
+}
+
+#back-button{
+    margin-left: 93.3%;
+}    
+
+
+button:hover {
+    background-color: #959c95;
+}
+
+.submit-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #1e88e5;
+}
+
+.reset-button {
+    background-color: #F44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #e53935;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#service_type {
+    width: 100%;
+    
+}
+
+.input-field:focus {
+    border-color: #2196F3;
+}
+
+/* Table Styles */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-table th, .service-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.service-table th {
+    background-color: #0c0e0f;
+    color: white;
+}
+
+.service-row {
+    transition: background-color 0.3s ease;
+}
+
+.status-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.status-select:focus {
+    border-color: #2196F3;
+}
